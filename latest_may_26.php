@@ -115,7 +115,7 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-vilva-fruits/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             //}elseif($pattern == "D8478F42BB20" || $pattern == "44B7D09EA734" || $pattern == "44B7D09E72C3" || $pattern == "44B7D09EA6E1" || $pattern == "44B7D09EA720" || $pattern == "74D5C623B908" || $pattern == "44B7D09EA711" || $pattern == "44B7D09E98D2"){
-            }elseif($pattern == "D8478F42BB20" || $pattern == "44B7D09EA734" || $pattern == "44B7D09E72C3"|| $pattern == "44B7D09EA720" || $pattern == "74D5C623B908" || $pattern == "44B7D09EA711" || $pattern == "44B7D09E98D2" || $pattern == "44B7D09EA6E1" || $pattern == "44B7D09EA7A6"){
+            }elseif($pattern == "D8478F42BB20" || $pattern == "44B7D09EA734" || $pattern == "44B7D09E72C3"|| $pattern == "44B7D09EA720" || $pattern == "74D5C623B908" || $pattern == "44B7D09EA711" || $pattern == "44B7D09E98D2" || $pattern == "44B7D09EA6E1" || $pattern == "44B7D09EA7A6" || $pattern == "44B7D09EA7C3" || $pattern == "44B7D09EA6FA" || $pattern == "44B7D09EA72D" || $pattern == "44B7D09EA7E6"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-nirt/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "9C956E532793"){
@@ -193,7 +193,7 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "44B7D09E97ED" || $pattern == "74D5C6CF2DDB" || $pattern == "44B7D09EA718" || $pattern == "74D5C6CF2DCF"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-sivaswamy-school/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "44B7D09EA6C5" || $pattern == "44B7D09EA7B3"){
+            }elseif($pattern == "44B7D09EA6C5" || $pattern == "44B7D09EA7B3" || $pattern == "9C956E7BD13B"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "44B7D09EA6CD"){
