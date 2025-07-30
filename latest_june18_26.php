@@ -99,7 +99,7 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             $newFilePath = $patternFolderPath . '/' . $filename;
             rename($file, $newFilePath);
 
-            if($pattern == "9C956E78E3E0" || $pattern == "9C956E78E40D" || $pattern == "9C956E78E379" || $pattern == "74D5C6CF2DEA" || $pattern == "74D5C6CF2D7D"){
+            if($pattern == "9C956E78E3E0" || $pattern == "9C956E78E40D" || $pattern == "9C956E78E379" || $pattern == "74D5C6CF2DEA" || $pattern == "74D5C6CF2D7D" || $pattern == "74D5C6CF3F01" || $pattern == "74D5C6CF3F24" || $pattern == "74D5C6CF3F55"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-best-green/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);                
             }elseif($pattern == "D8478F42B1FB"){
@@ -108,14 +108,11 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "D8458F42BB20"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-nirt/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "D8478F42BA80" || $pattern == "D8478F42BB82"){
-                $tempFolder = "/home/thiru/csv-to-influx-wattmon-aalayam-wind-farm/csv-source";
-                copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "9C956E5327B0"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-vilva-fruits/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             //}elseif($pattern == "D8478F42BB20" || $pattern == "44B7D09EA734" || $pattern == "44B7D09E72C3" || $pattern == "44B7D09EA6E1" || $pattern == "44B7D09EA720" || $pattern == "74D5C623B908" || $pattern == "44B7D09EA711" || $pattern == "44B7D09E98D2"){
-            }elseif($pattern == "D8478F42BB20" || $pattern == "44B7D09EA734" || $pattern == "44B7D09E72C3"|| $pattern == "44B7D09EA720" || $pattern == "74D5C623B908" || $pattern == "44B7D09EA711" || $pattern == "44B7D09E98D2" || $pattern == "44B7D09EA6E1" || $pattern == "44B7D09EA7A6" || $pattern == "44B7D09EA7C3" || $pattern == "44B7D09EA6FA" || $pattern == "44B7D09EA72D" || $pattern == "44B7D09EA7E6"){
+            }elseif($pattern == "D8478F42BB20" || $pattern == "44B7D09EA734" || $pattern == "44B7D09E72C3"|| $pattern == "44B7D09EA720" || $pattern == "74D5C623B908" || $pattern == "44B7D09EA711" || $pattern == "44B7D09E98D2" || $pattern == "44B7D09EA6E1" || $pattern == "44B7D09EA7A6" || $pattern == "44B7D09EA7C3" || $pattern == "44B7D09EA6FA" || $pattern == "44B7D09EA72D" || $pattern == "44B7D09EA7E6" || $pattern == "9C956E78E40B"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-nirt/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "9C956E532793"){
@@ -133,7 +130,7 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "D8478F42BB21"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-vivin-tex-pv-dg/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "D8478F40E729"){
+            }elseif($pattern == "D8478F40E729" || $pattern == "44B7D09EA7CA" || $pattern == "44B7D09EA7E0"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-indway-prime-energy/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "74D5C604DBB7" || $pattern == "9C956E78E401" || $pattern == "9C956E78E3B2" || $pattern == "D8478F42B5F0" || $pattern == "9C956E78E3C5" || $pattern == "9C956E78E3F4" 
@@ -149,10 +146,10 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "9C956E5327F1" || $pattern == "44B7D09EA78F" || $pattern == "44B7D09EA695" || $pattern == "44B7D09EA6C1" || $pattern == "44B7D09EA7C4" || $pattern == "44B7D09EA7A8"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-olitec/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-	    }elseif($pattern == "9C956E78E3EB" || $pattern == "9C956E78E40E" || $pattern == "9C956E78E3E1" || $pattern == "74D5C6CF2D5E" || $pattern == "74D5C6CF2DF1" || $pattern == "74D5C6CF2DF5" || $pattern == "74D5C6CF3F1F" || $pattern == "74D5C6CF3F44" || $pattern == "44B7D09EA71D" || $pattern == "44B7D09E72C2" || $pattern == "44B7D09EA702"){
+	        }elseif($pattern == "9C956E78E3EB" || $pattern == "9C956E78E40E" || $pattern == "9C956E78E3E1" || $pattern == "74D5C6CF2D5E" || $pattern == "74D5C6CF2DF1" || $pattern == "74D5C6CF2DF5" || $pattern == "74D5C6CF3F1F" || $pattern == "74D5C6CF3F44" || $pattern == "44B7D09EA71D" || $pattern == "44B7D09E72C2" || $pattern == "44B7D09EA702"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-Renfra/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "9C956E78E40C"){
+            }elseif($pattern == "9C956E78E40C" || $pattern == "44B7D09EA70D" || $pattern == "74D5C6CF2CC7"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-ahil-green-energy/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "44B7D09E97D2"){
@@ -164,7 +161,7 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "44B7D09E9837"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-eveready-cotton/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "44B7D09E98DB"){
+            }elseif($pattern == "44B7D09E98DB" || $pattern == "74D5C6CF2D59" || $pattern == "74C90F9824FA"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon-shree-sai-hanuman-smelters/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
                 //send file every 15 minutes once to ventus cloud
@@ -178,7 +175,7 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "44B7D09E72BC" || $pattern == "44B7D09EA78B" || $pattern == "44B7D09EA75E" || $pattern == "44B7D09EA77D" || $pattern == "44B7D09E993F" || $pattern == "44B7D09EA742"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-Aadil-Solar-Energy/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "44B7D09E981D"){
+            }elseif($pattern == "44B7D09E981D" || $pattern == "74C90FAE9EAD"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-M2V-Growenergy/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "44B7D09EA771" || $pattern == "44B7D09EA7AE"){
@@ -193,20 +190,36 @@ function moveFiles($sourceFolder, $destinationFolder, $tempFolder) {
             }elseif($pattern == "44B7D09E97ED" || $pattern == "74D5C6CF2DDB" || $pattern == "44B7D09EA718" || $pattern == "74D5C6CF2DCF"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-sivaswamy-school/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "44B7D09EA6C5" || $pattern == "44B7D09EA7B3" || $pattern == "9C956E7BD13B"){
+            //Thiru changed on 07-Jul-2025}elseif($pattern == "44B7D09EA6C5" || $pattern == "44B7D09EA7B3" || $pattern == "9C956E7BD13B"){
+            }elseif($pattern == "9C956E7BD13B"){
                 $tempFolder = "/home/thiru/csv-to-influx-wattmon/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "44B7D09EA6CD"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-jharka/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            }elseif($pattern == "74D5C6CF2DEF" || $pattern == "74D5C6CF3F2C" || $pattern == "74D5C6CF2D8B" || $pattern == "74D5C6CF2D85"|| $pattern == "44B7D09EA7B8" || $pattern == "74D5C6CF2DF6" || $pattern == "74D5C6CF2DC2" || $pattern == "D8478F42BB74"){
+            }elseif($pattern == "74D5C6CF2DEF" || $pattern == "74D5C6CF3F2C" || $pattern == "74D5C6CF2D8B" || $pattern == "74D5C6CF2D85"|| $pattern == "44B7D09EA7B8" || $pattern == "74D5C6CF2DF6" || $pattern == "74D5C6CF2DC2" || $pattern == "D8478F42BB74" || $pattern == "44B7D09EA7CF"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-aim-electricals/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
-            } elseif($pattern == "44B7D09EA70F"){
+            }elseif($pattern == "44B7D09EA70F" || $pattern == "44B7D09EA717" || $pattern == "74D5C6CF2CC6" || $pattern == "44B7D09EA6C5" || $pattern == "44B7D09EA7B3" || $pattern == "D8478F42BA80" || $pattern == "D8478F42BB82"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-eternal_renewables/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }elseif($pattern == "44B7D09EA6D0"){
                 $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-marg/csv-source";
+                copy($newFilePath, $tempFolder . '/' . $filename);
+            }elseif($pattern == "44B7D09EA76A" || $pattern == "44B7D09EA7F2" || $pattern == "74D5C6CF2CA9"){
+                $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-fa-infra/csv-source";
+                copy($newFilePath, $tempFolder . '/' . $filename);
+            }elseif($pattern == "44B7D09EA6EB"){
+                $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-kyra-photon/csv-source";
+                copy($newFilePath, $tempFolder . '/' . $filename);
+            }elseif($pattern == "74D5C6CF2CAE" || $pattern == "44B7D09EA74B"){
+                $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-sri-murugan-fam/csv-source";
+                copy($newFilePath, $tempFolder . '/' . $filename);
+            }elseif($pattern == "74C90F9812B1"){
+                $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-viva-technologies/csv-source";
+                copy($newFilePath, $tempFolder . '/' . $filename);
+            }elseif($pattern == "44B7D09EA735"){
+                $tempFolder = "/home/grafanauser/apps/csv-to-influx-wattmon-sarvesh/csv-source";
                 copy($newFilePath, $tempFolder . '/' . $filename);
             }
 
